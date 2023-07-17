@@ -4,4 +4,4 @@ COPY . .
 RUN go build -o main .
 COPY . .
 EXPOSE 8080
-CMD ["./main"]
+CMD ["./main"
