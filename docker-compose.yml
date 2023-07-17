@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  frontend:
+  image: techfr
+  build:
+    context: frontend
+    dockerfile: Dockerfile
+ports:
+ - 3000:3000
+backend:
+  image: tech
+  build:
+  context: backend
+  dockerfile: Dockerfile
+ports:
+ - 8080:8080
